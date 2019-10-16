@@ -65,6 +65,12 @@ html {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .hero {
+    height: 120%;
+  }
+}
+
 /* ------------------ ABOUT ------------------ */
 
 .about-section {
@@ -112,6 +118,12 @@ html {
     height: 150%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-section {
+    height: 200%;
   }
 }
 
@@ -240,6 +252,13 @@ html {
     margin-top: 2rem;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .info {
+    height: 100%;
+  }
+}
+
 
 /* ------------------ INFO ------------------ */
 

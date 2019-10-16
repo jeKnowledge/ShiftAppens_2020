@@ -61,13 +61,14 @@ html {
 @media screen and (max-width: 992px) {
   .hero {
     grid-template-columns: 1fr;
-    grid-template-rows: (1/2)fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 
 @media screen and (max-width: 450px) {
   .hero {
     height: 120%;
+    padding: 2rem 0;
   }
 
   .hero-info {
@@ -166,7 +167,7 @@ html {
 @media screen and (max-width: 350px) {
   .about-section {
     height: 270%;
-    padding: 3rem 0;
+    padding: 5rem 0;
   }
 
   .img-mockup {
@@ -318,7 +319,7 @@ html {
 @media screen and (max-width: 350px) {
   .info {
     height: 150%;
-    padding: 3rem 0;
+    padding: 5rem 0;
   }
 
   .info form .info-form-input input {

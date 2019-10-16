@@ -20,7 +20,8 @@ html {
   grid-template-rows: 4fr 1fr;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  background: url(../images/background.png) center;
+  background: url(../images/background.png);
+  background-position: center;
   background-size: cover;
   color: white;
 }

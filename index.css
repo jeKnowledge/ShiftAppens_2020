@@ -61,7 +61,7 @@ html {
 @media screen and (max-width: 992px) {
   .hero {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: (1/2)fr 1fr;
   }
 }
 
@@ -69,11 +69,32 @@ html {
   .hero {
     height: 120%;
   }
+
+  .hero-info {
+    width: 80%;
+  }
+
+  .hero #tiger {
+    width: 10rem;
+  }
+  
+  .hero #particles {
+    width: 20rem;
+  }
 }
 
 @media screen and (max-width: 350px) {
   .hero {
     height: 180%;
+  }
+
+  .hero-info h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .hero #particles {
+    width: 18rem;
   }
 }
 
@@ -131,11 +152,26 @@ html {
   .about-section {
     height: 200%;
   }
+
+  .about-info {
+    width: 80%;
+  }
+
+  .img-mockup {
+    width: 350px;
+    height: 350px;
+  }
 }
 
 @media screen and (max-width: 350px) {
   .about-section {
     height: 270%;
+    padding: 3rem 0;
+  }
+
+  .img-mockup {
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -269,11 +305,24 @@ html {
   .info {
     height: 100%;
   }
+
+  .info-section {
+    width: 80%;
+  }
+
+  .info form .info-form-input input {
+    width: 18rem;
+  }
 }
 
 @media screen and (max-width: 350px) {
   .info {
     height: 150%;
+    padding: 3rem 0;
+  }
+
+  .info form .info-form-input input {
+    width: 16rem;
   }
 }
 
@@ -347,5 +396,30 @@ footer {
 
   .footer-credits h2 {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  footer {
+    padding: 2rem;
+  }
+
+  .footer-credits h2 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  footer {
+    padding: 1rem;
+  }
+
+  .footer-credits h2 {
+    font-size: 10px;
+  }
+
+  .footer-logos a {
+    width: 3rem;
+    height: 3rem;
   }
 }

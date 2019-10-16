@@ -1,0 +1,90 @@
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Shift Appens</title>
+      <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+      <link rel="stylesheet" href="reset.css">
+      <link rel="stylesheet" href="index.css">
+      <link href="https://fonts.googleapis.com/css?family=Hind:300,500|Poppins:700&display=swap" rel="stylesheet"> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    </head>
+  <body>
+    <section class="hero">
+      <div class="hero-info">
+        <h2>we are</br> unlimited</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat</p>
+      </div>
+      <div id="scene">
+          <img data-depth="0.2" id="particles" src="particulas.png" alt="particles"/>
+          <img data-depth="1" id="tiger" src="tiger.png" alt="tiger"/>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about-section">
+        <div class="about-info">
+          <h2>what is</br>shift appens?</h2>
+          <div class="line"></div>
+          <p>
+            Shift APPens is a hackathon, always striving for a relaxed environment, where it seeks to foster healthy competition through a knowledge exchange from the world of technology among participants.
+          </p>
+          <p>
+            The goal is to create an application in 48 hours and defend it in a final pitch in front of a carefully chosen jury.
+          </p>
+          <p>
+            In this hackathon, are joined developers, designers, and entrepreneurs of the most diverse technological areas, coming from all over the country.
+            On the way to its 6th edition, Shift APPens is organized by the University of Coimbra's Computer Science Students and by jeKnowledge, a junior enterprise of the Faculty of Sciences and Technology of the University of Coimbra.
+          </p>
+        </div>
+        <img class="img-mockup" src="mockup-iphone.png" alt="iphone"/>
+      </div>
+    </section>
+    <section class="info">
+      <div class="info-section">
+        <div class="info-info">
+          <h2>how is it?</h2>
+          <div class="line"></div>
+          <p>
+            Counting on a relaxed environment and looking to promote a healthy competition and trade of different knowledge from the high-tech world, this hackathon makes it easy to develop hard and soft skills, like creativity, team spirit and the ability to work against the clock.
+          </p>
+        </div>
+        <form>
+          <h4>It's a match</h4>
+          <div class="info-form">
+            <div class="info-form-input">
+              <label>Subscribe to our newsletter</label>
+              <input type="text" name="skill">
+            </div>
+            <button>Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-contacts">
+        <h2>Contact us</h2>
+        <span>geral@shiftappens.com</span>
+        <span>+351 239 790 002</span>
+        <span>+351 919 794 638</span>
+      </div>
+      <div class="footer-credits">
+        <h2>Made with ❤ by us</h2>
+        <div class="footer-logos">
+          <a href="https://nei.dei.uc.pt/" target="_blank">
+            <img src="nei.png" alt="NEI"/>
+          </a>
+          <a href="https:/jeknowledge.pt/" target="_blank">
+            <img src="jek.svg" alt="jeKnowledge"/>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+<script>
+  var scene = document.getElementById('scene');
+  var parallaxInstance = new Parallax(scene);
+</script>
+

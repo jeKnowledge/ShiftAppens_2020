@@ -2,6 +2,7 @@ html {
   font-size: 16px;
   font-family: 'Hind', sans-serif;
   font-weight: 300;
+  scroll-behavior: smooth;
 }
 
 .line {
@@ -19,7 +20,7 @@ html {
   grid-template-rows: 4fr 1fr;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  background: url(background.png) center;
+  background: url(../images/background.png) center;
   background-size: cover;
   color: white;
 }
@@ -27,6 +28,11 @@ html {
 .hero-info {
   width: 60%;
   justify-self: center;
+}
+
+.hero-info #logo {
+  width: 10rem;
+  height: auto;
 }
 
 .hero-info h2 {

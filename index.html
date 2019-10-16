@@ -1,25 +1,27 @@
 <html>
   <head>
       <meta charset="utf-8">
-      <meta name="viewport" content="user-scalable=no, initial-scale=1, height=device-height, target-densitydpi=medium-dpi" />
+      <meta name="viewport" content="user-scalable=no, initial-scale=1, height=device-height" />
       <title>Shift Appens</title>
-      <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
-      <link rel="stylesheet" href="reset.css">
-      <link rel="stylesheet" href="index.css">
+      <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/index.css">
       <link href="https://fonts.googleapis.com/css?family=Hind:300,500|Poppins:700&display=swap" rel="stylesheet"> 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
   <body>
     <section class="hero">
       <div class="hero-info">
+          <img id="logo" src="images/logo.png" alt="logo"/>
         <h2>we are</br> unlimited</h2>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat</p>
       </div>
       <div id="scene">
-          <img data-depth="0.2" id="particles" src="particulas.png" alt="particles"/>
-          <img data-depth="1" id="tiger" src="tiger.png" alt="tiger"/>
+          <img data-depth="0.2" id="particles" src="images/particulas.png" alt="particles"/>
+          <img data-depth="1" id="tiger" src="images/tiger.png" alt="tiger"/>
       </div>
-      <a id="arrow" href="#about-ref"><img src="seta.png" alt="arrow"/></a>
+      <a id="arrow" href="#about-ref"><img src="images/seta.png" alt="arrow"/></a>
     </section>
     <section id="about-ref" class="about">
       <div class="about-section">
@@ -37,7 +39,7 @@
             On the way to its 6th edition, Shift APPens is organized by the University of Coimbra's Computer Science Students and by jeKnowledge, a junior enterprise of the Faculty of Sciences and Technology of the University of Coimbra.
           </p>
         </div>
-        <img class="img-mockup" src="mockup-iphone.png" alt="iphone"/>
+        <img class="img-mockup" src="images/mockup-iphone.png" alt="iphone"/>
       </div>
     </section>
     <section class="info">
@@ -72,10 +74,10 @@
         <h2>Made with ❤ by us</h2>
         <div class="footer-logos">
           <a href="https://nei.dei.uc.pt/" target="_blank">
-            <img src="nei.png" alt="NEI"/>
+            <img src="images/nei.png" alt="NEI"/>
           </a>
           <a href="https:/jeknowledge.pt/" target="_blank">
-            <img src="jek.svg" alt="jeKnowledge"/>
+            <img src="images/jek.svg" alt="jeKnowledge"/>
           </a>
         </div>
       </div>
@@ -87,5 +89,23 @@
 <script>
   var scene = document.getElementById('scene');
   var parallaxInstance = new Parallax(scene);
+
+  $(document).ready(function(){
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 600, function(){
+   
+        window.location.hash = hash;
+      });
+    }
+  });
+});
 </script>
 

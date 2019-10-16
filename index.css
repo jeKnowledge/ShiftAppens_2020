@@ -65,9 +65,15 @@ html {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .hero {
     height: 120%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .hero {
+    height: 180%;
   }
 }
 
@@ -121,9 +127,15 @@ html {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .about-section {
     height: 200%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .about-section {
+    height: 270%;
   }
 }
 
@@ -253,11 +265,18 @@ html {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .info {
     height: 100%;
   }
 }
+
+@media screen and (max-width: 350px) {
+  .info {
+    height: 150%;
+  }
+}
+
 
 
 /* ------------------ INFO ------------------ */

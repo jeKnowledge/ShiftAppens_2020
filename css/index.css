@@ -17,11 +17,11 @@ html {
 .hero {
   height: 100%;
   display: grid;
-  grid-template-rows: 4fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   background: url(../images/background.png);
-  background-position: center;
+  background-position: left;
   background-size: cover;
   color: white;
 }
@@ -31,9 +31,12 @@ html {
   justify-self: center;
 }
 
-.hero-info #logo {
-  width: 10rem;
+.hero #logo {
+  width: 18rem;
   height: auto;
+  justify-self: center;
+  grid-column-start: 1;
+  grid-column-end:   4;
 }
 
 .hero-info h2 {
@@ -80,12 +83,16 @@ html {
 @media screen and (max-width: 992px) {
   .hero {
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
   }
 
-  #arrow {
+  #arrow, .hero #logo {
     grid-column-start: 1;
-    grid-column-end:   1;
+    grid-column-end: 1;
+  }
+
+  .hero #scene {
+    display: none;
   }
 }
 
@@ -97,10 +104,6 @@ html {
 
   .hero-info {
     width: 80%;
-  }
-
-  .hero #tiger {
-    width: 10rem;
   }
   
   .hero #particles {
@@ -353,7 +356,7 @@ html {
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 4rem;
+  padding: 2rem 3rem;
   background: linear-gradient(90deg, #3619E0 0%, #940EE2 50%, #F40BA6 100%);
   color: white;
 }
@@ -371,9 +374,11 @@ footer {
   line-height: 22px;
 }
 
-.footer-contacts span {
+.footer-contacts span, .footer-contacts a {
   font-size: 13px;
   line-height: 24px;
+  color: white;
+  text-decoration: none;
 }
 
 .footer-credits {

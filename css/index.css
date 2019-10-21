@@ -129,10 +129,10 @@ html {
 /* ------------------ ABOUT ------------------ */
 
 .about-section {
-  height: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  padding: 10rem 0;
 }
 
 .about-info {
@@ -170,16 +170,16 @@ html {
 
 @media screen and (max-width: 992px) {
   .about-section {
-    height: 150%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    padding: 7rem 0;
   }
 }
 
 @media screen and (max-width: 450px) {
   .about-section {
-    height: 120%;
     grid-template-rows: 1fr;
+    padding: 5rem 0;
   }
 
   .about-info {
@@ -191,22 +191,15 @@ html {
   }
 }
 
-@media screen and (max-width: 350px) {
-  .about-section {
-    height: 150%;
-    padding: 5rem 0;
-  }
-}
-
 /* ------------------ INFO ------------------ */
 
 .info {
-  height: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  background-color: #141414;
+  background-color: #010004;
   color: white;
+  padding: 10rem 0;
 }
 
 .info-section {
@@ -300,9 +293,9 @@ html {
 
 @media screen and (max-width: 992px) {
   .info {
-    height: 80%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    padding: 7rem 0;
   }
 
   .info-form {
@@ -326,7 +319,7 @@ html {
 
 @media screen and (max-width: 450px) {
   .info {
-    height: 100%;
+    padding: 5rem 0;
   }
 
   .info-section {
@@ -339,11 +332,6 @@ html {
 }
 
 @media screen and (max-width: 350px) {
-  .info {
-    height: 150%;
-    padding: 5rem 0;
-  }
-
   .info form .info-form-input input {
     width: 16rem;
   }

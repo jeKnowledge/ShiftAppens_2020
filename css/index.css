@@ -268,7 +268,7 @@ html {
   outline: none;
 }
 
-.info form button {
+.info form input[type="submit"] {
   height: 2.5rem;
   padding: 0 2rem;
   border: 2px solid #333333;
@@ -285,7 +285,7 @@ html {
   cursor: pointer;
 }
 
-.info form button:hover {
+.info form input[type="submit"]:hover {
   border: 2px solid #FFFFFF;
   box-shadow: 0px 4px 16px rgba(255, 253, 253, 0.48);
 }

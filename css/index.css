@@ -82,7 +82,11 @@ html {
 @media screen and (max-width: 992px) {
   .hero {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+  }
+
+  .hero-info {
+    margin: 4rem 0;
   }
 
   #arrow, .hero #logo {
@@ -106,6 +110,7 @@ html {
 
   .hero-info h2 {
     font-size: 2.5rem;
+    line-height: 3rem;
   }
   
   .hero-info p {
@@ -117,7 +122,7 @@ html {
 @media screen and (max-width: 350px) {
   .hero-info h2 {
     font-size: 2rem;
-    line-height: 3rem;
+    line-height: 2.5rem;
   }
 
   .hero #particles {
@@ -264,7 +269,7 @@ html {
   letter-spacing: 0.115em;
 }
 
-.info form .info-form-input input:focus {
+.info form input:focus {
   outline: none;
 }
 
@@ -310,8 +315,7 @@ html {
     width: 20rem;
   }
 
-  .info form button {
-    align-self: left;
+  .info form input[type="submit"] {
     margin-top: 2rem;
   }
 }

@@ -18,7 +18,7 @@ html {
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 3rem;
+  height: 100vh;
   align-items: center;
   background: url(../images/background.png);
   background-position: left;
@@ -97,10 +97,6 @@ html {
 }
 
 @media screen and (max-width: 450px) {
-  .hero {
-    grid-gap: 5rem;
-  }
-
   .hero-info {
     width: 80%;
   }

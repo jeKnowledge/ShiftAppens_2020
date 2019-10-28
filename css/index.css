@@ -362,6 +362,10 @@ footer {
   line-height: 22px;
 }
 
+.footer-contacts .contact-coord {
+  font-weight: 900;
+}
+
 .footer-contacts span, .footer-contacts a {
   font-size: 13px;
   line-height: 24px;

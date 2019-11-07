@@ -336,8 +336,6 @@ html {
   }
 }
 
-
-
 /* ------------------ INFO ------------------ */
 
 footer {
@@ -360,10 +358,6 @@ footer {
   font-size: 13px;
   font-weight: bold;
   line-height: 22px;
-}
-
-.footer-contacts .contact-coord {
-  font-weight: 900;
 }
 
 .footer-contacts span, .footer-contacts a {

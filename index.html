@@ -1,71 +1,175 @@
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, height=device-height" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="robots" content="noydir, noodp">
-    <meta name="description" content="Shift Appens - Make It Appen">
-    <meta name="keywords" content="shift, appens, hackathon, coding, talks, 48hours, coimbra, 2020, apps, design, 13, April, jeKnowledge, nei, dei, cmc">
-    <meta name="author" content="Miguel Vasconcelos">
-    <meta property="og:image" content="https://shiftappens.pt/images/tiger.png"/>
-    <meta property="og:title" content="Shift Appens"/>
-    <meta property="og:description" content="Shift APPens is a hackathon, always striving for a relaxed environment, where it seeks to foster healthy competition through a knowledge exchange from the world of technology among participants.">
-    <meta property="og:url" content="https://shiftappens.pt"/>
-    <meta property="og:type" content="website" />
-    <link rel="canonical" href="https://www.shiftappens.pt">
-    <title>Shift Appens</title>
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Hind:300,500|Poppins:700&display=swap" rel="stylesheet"> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, height=device-height" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="robots" content="noydir, noodp">
+  <meta name="description" content="Shift Appens - Make It Appen">
+  <meta name="keywords"
+    content="shift, appens, hackathon, coding, talks, 48hours, coimbra, 2020, apps, design, 13, April, jeKnowledge, nei, dei, cmc">
+  <meta name="author" content="Miguel Vasconcelos">
+  <meta property="og:image" content="https://shiftappens.pt/images/tiger.png" />
+  <meta property="og:title" content="Shift Appens" />
+  <meta property="og:description"
+    content="Shift APPens is a hackathon, always striving for a relaxed environment, where it seeks to foster healthy competition through a knowledge exchange from the world of technology among participants.">
+  <meta property="og:url" content="https://shiftappens.pt" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://www.shiftappens.pt">
+  <title>Shift Appens</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/colors.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/social.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Hind:300,500|Poppins:300,700&display=swap" rel="stylesheet">
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.css' rel='stylesheet' />
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"></script>
+  <script src="js/countdown.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-links">
+      <a class="fromLeft" href="faq.html">faq</a>
+      <a class="fromLeft" href="past.html">past</a>
+      <a class="fromLeft" href="about.html">about us</a>
+    </div>
+    <a href="https://shiftappens.com" class="nav-logo"></a>
+    <div class="menu" id="menu-button"></div>
+  </nav>
+  <aside>
+    <a href="https://twitter.com/ShiftAPPens" target="_blank"><img src="images/twitter.svg" alt="Twitter"></a>
+    <a href="https://www.facebook.com/whereshiftappens/" target="_blank"><img src="images/facebook.svg"
+        alt="facebook"></a>
+    <a href="https://www.instagram.com/shiftappens/" target="_blank"><img src="images/insta.svg" alt="Instagram"></a>
+    <a href="https://www.linkedin.com/company/shift-appens/" target="_blank"><img src="images/linkedin.svg"
+        alt="Linkedin"></a>
+    <a href="https://medium.com/@shiftappens" target="_blank"><img src="images/medium.svg" alt="Medium"></a>
+  </aside>
+  <main>
+    <div id="mobile-menu">
+      <div class="mobile-links">
+        <a class="fromLeft" href="about.html">about us</a>
+        <a class="fromLeft" href="past.html">past</a>
+        <a class="fromLeft" href="faq.html">faq</a>
+      </div>
+      <div class="mobile-aside">
+        <a href="https://twitter.com/ShiftAPPens" target="_blank"><img src="images/twitter.svg" alt="Twitter"></a>
+        <a href="https://www.facebook.com/whereshiftappens/" target="_blank"><img src="images/facebook.svg"
+            alt="facebook"></a>
+        <a href="https://www.instagram.com/shiftappens/" target="_blank"><img src="images/insta.svg" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/company/shift-appens/" target="_blank"><img src="images/linkedin.svg"
+            alt="Linkedin"></a>
+        <a href="https://medium.com/@shiftappens" target="_blank"><img src="images/medium.svg" alt="Medium"></a>
+      </div>
+    </div>
     <section class="hero">
-      <img id="logo" src="images/logo.png" alt="logo"/>
       <div class="hero-info">
-        <h2>make it appen</h2>
-        <p>An event that takes place in Coimbra and brings people from north to south of the country. If you haven’t had a chance to participate yet, don’t miss it! Friendships, fun and competition. Much more than a Hackathon.</p>
+        <h2 class="hero-date">March 20<span>th</span>,<br>21<span>st</span> & 22<span>nd</span></h2>
+        <h4>make it appen</h4>
+        <p>An event that takes place in Coimbra and brings people from north to south of the country. If you haven’t had
+          a chance to participate yet, don’t miss it! Friendships, fun and competition.<br><span>Much more than a
+            Hackathon.</span></p>
       </div>
       <div id="scene">
-          <img data-depth="0.2" id="particles" src="images/particulas.png" alt="particles"/>
-          <img data-depth="1" id="tiger" src="images/tiger.png" alt="tiger"/>
+        <p data-depth="1.5"><span id="days"></span>d : <span id="hours"></span>h : <span id="minutes"></span>m : <span
+            id="seconds"></span>s</p>
+        <img data-depth="0.2" id="particles" src="images/particulas.png" alt="particles" />
+        <img data-depth="1" id="tiger" src="images/tiger.png" alt="tiger" />
       </div>
-      <a id="arrow" href="#about-ref"><img src="images/seta.png" alt="arrow"/></a>
+      <a id="arrow" href="#about-ref"><img src="images/seta.png" alt="arrow" /></a>
     </section>
     <section id="about-ref" class="about">
       <div class="about-section">
         <div class="about-info">
-          <h2>what is</br>shift appens?</h2>
-          <div class="line"></div>
+          <div class="section-title">
+            <h2>what is</br>shift appens?</h2>
+          </div>
           <p>
-            Shift APPens is a hackathon, always striving for a relaxed environment, where it seeks to foster healthy competition through a knowledge exchange from the world of technology among participants.
+            Shift APPens is a hackathon, always striving for a relaxed environment, where it seeks to foster healthy
+            competition through a knowledge exchange from the world of technology among participants.
           </p>
           <p>
-            The goal is to create an application in 48 hours and defend it in a final pitch in front of a carefully chosen jury.
+            The goal is to create an application in 48 hours and defend it in a final pitch in front of a carefully
+            chosen jury.
           </p>
           <p>
-            In this hackathon, are joined developers, designers, and entrepreneurs of the most diverse technological areas, coming from all over the country.
-            On the way to its 7th edition, Shift APPens is organized by the University of Coimbra's Computer Science Students and by jeKnowledge, a junior enterprise of the Faculty of Sciences and Technology of the University of Coimbra.
+            In this hackathon, are joined developers, designers, and entrepreneurs of the most diverse technological
+            areas, coming from all over the country.
+            On the way to its 7th edition, Shift APPens is organized by the University of Coimbra's Computer Science
+            Students and by jeKnowledge, a junior enterprise of the Faculty of Sciences and Technology of the University
+            of Coimbra.
           </p>
         </div>
-        <img class="img-mockup" src="images/mockup-iphone.png" alt="iphone"/>
+        <div class="container" id="animatedHeading">
+          <img src="images/teste.png" alt="Twitter">
+          <img src="images/background.png" alt="Twitter">
+          <img src="images/teste.png" alt="Twitter">
+          <img src="images/background.png" alt="Twitter">
+          <img src="images/teste.png" alt="Twitter">
+        </div>
+      </div>
+    </section>
+    <section class="where">
+      <div class="where-section">
+        <div id='map' class="map-section">
+        </div>
+        <div class="where-info">
+          <div class="section-title">
+            <h2>Where & How?</h2>
+          </div>
+          <p>
+            Shift APPens will happen on the 20th, 21st and 22nd of March of 2020, in the beautiful city of Coimbra.
+            These three intense days of coding,
+            coffee drinking and random things happening will take place in the Dr. Mário Mexia Pavilion, in the center
+            of Coimbra provided by a good transports network and a shopping center!
+          </p>
+          <h3>Staying with us?</h3>
+          <p>
+            Don’t worry, we have your best interests at heart and we’ll provide you with the best hackathon ever, with
+            the best conditions and comfort.
+          </p>
+          <h3>Wanna know how to get there?</h3>
+          <p>
+            <span>By bus: </span>If you arrive at Coimbra by bus you can take the yellow bus no. 5 and get out at
+            “Infanta Dona Maria”.
+          </p>
+          <p>
+            <span>By train: </span>If you arrive at Coimbra by train (Coimbra-B) you can take the yellow bus no. 5 and
+            get out at “Infanta Dona Maria”. If you arrive at Coimbra by train (Coimbra-A) you can take the yellow bus
+            no. 24T and get out at “Infanta Dona Maria”. You can also take a taxi and tell them to leave at Dr. Mário
+            Mexia Pavilion.
+          </p>
+        </div>
       </div>
     </section>
     <section class="info">
       <div class="info-section">
         <div class="info-info">
-          <h2>how is it?</h2>
-          <div class="line"></div>
+          <div class="section-title">
+            <h2>how is it?</h2>
+          </div>
           <p>
-            Counting on a relaxed environment and looking to promote a healthy competition and trade of different knowledge from the high-tech world, this hackathon makes it easy to develop hard and soft skills, like creativity, team spirit and the ability to work against the clock.
+            Counting on a relaxed environment and looking to promote a healthy competition and trade of different
+            knowledge from the high-tech world, this hackathon makes it easy to develop hard and soft skills, like
+            creativity, team spirit and the ability to work against the clock.
           </p>
-        </div>       
+        </div>
         <div id="mc_embed_signup">
-          <form action="https://shiftappens.us12.list-manage.com/subscribe/post?u=6002684bae4a40458e05587b2&amp;id=951996e1be" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <form
+            action="https://shiftappens.us12.list-manage.com/subscribe/post?u=6002684bae4a40458e05587b2&amp;id=951996e1be"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+            target="_blank" novalidate>
             <h4>It's a match</h4>
             <div class="info-form" id="mc_embed_signup_scroll">
               <div class="mc-field-group info-form-input">
@@ -86,54 +190,139 @@
           </form>
         </div>
       </div>
+      <div class="info-background"></div>
     </section>
-    <footer>
-      <div class="footer-contacts">
-        <h2>Contact us</h2>
-        <a href="mailto:geral@shiftappens.com" target="_top">geral@shiftappens.com</a>
-        <span>+351 912 764 760</span>
-        <span>+351 919 891 684</span>
+  </main>
+  <footer>
+    <div class="footer-contacts">
+      <h2>Contact us</h2>
+      <a href="mailto:geral@shiftappens.com" target="_top">geral@shiftappens.com</a>
+      <span>+351 912 764 760</span>
+      <span>+351 919 891 684</span>
+    </div>
+    <div class="footer-credits">
+      <h2>Made with ❤ by us</h2>
+      <div class="footer-logos">
+        <a href="https://nei.dei.uc.pt/" target="_blank">
+          <img src="images/nei.png" alt="NEI" />
+        </a>
+        <a href="https://jeknowledge.pt/" target="_blank">
+          <img src="images/jek.svg" alt="jeKnowledge" />
+        </a>
       </div>
-      <div class="footer-credits">
-        <h2>Made with ❤ by us</h2>
-        <div class="footer-logos">
-          <a href="https://nei.dei.uc.pt/" target="_blank">
-            <img src="images/nei.png" alt="NEI"/>
-          </a>
-          <a href="https:/jeknowledge.pt/" target="_blank">
-            <img src="images/jek.svg" alt="jeKnowledge"/>
-          </a>
-        </div>
-      </div>
-    </footer>
-  </body>
+    </div>
+    <div class="footer-collab">
+      <h2>In collaboration with</h2>
+      <a href="https://www.cm-coimbra.pt/" target="_blank">
+        <img src="images/cmc.svg" alt="CMC" />
+      </a>
+    </div>
+  </footer>
+</body>
+
 </html>
 
 
-<script>
+<script id="mcjs">
   var scene = document.getElementById('scene');
   var parallaxInstance = new Parallax(scene);
 
-  $(document).ready(function(){
-  $("a").on('click', function(event) {
+  $(document).ready(function () {
+    $("a").on('click', function (event) {
 
-    if (this.hash !== "") {
-      event.preventDefault();
+      if (this.hash !== "") {
+        event.preventDefault();
 
-      var hash = this.hash;
+        var hash = this.hash;
 
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 600, function(){
-   
-        window.location.hash = hash;
-      });
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 600, function () {
+
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+
+  ! function (c, h, i, m, p) {
+    m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
+  }(document, "script",
+    "https://chimpstatic.com/mcjs-connected/js/users/6002684bae4a40458e05587b2/6ca50c8712130f493b52ff1ed.js");
+
+  mapboxgl.accessToken =
+    'pk.eyJ1IjoibWlndWVsdmFzY29uY2Vsb3MiLCJhIjoiY2s1azc4MHg2MGE5bjNrbzR0dmxvaGxjayJ9.7Y5nEvvzMcLVkoJPfSmgIg';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/miguelvasconcelos/ck5k839mx2njl1inw2kxtxck1'
+  });
+
+  var geojson = {
+    type: 'FeatureCollection',
+    features: [{
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-8.408, 40.2058]
+      }
+    }]
+  };
+
+  geojson.features.forEach(function (marker) {
+
+    var el = document.createElement('div');
+    el.className = 'marker';
+
+    new mapboxgl.Marker(el)
+      .setLngLat(marker.geometry.coordinates)
+      .addTo(map);
+  });
+
+  var titleMain = $("#animatedHeading");
+  var titleSubs = titleMain.find("slick-active");
+
+  if (titleMain.length) {
+
+    titleMain.slick({
+      autoplay: true,
+      arrows: false,
+      centerMode: true,
+      dots: false,
+      slidesToShow: 3,
+      draggable: false,
+      infinite: true,
+      pauseOnHover: false,
+      swipe: false,
+      touchMove: false,
+      vertical: true,
+      verticalScrolling: true,
+      speed: 2000,
+      autoplaySpeed: 2000,
+      useTransform: true,
+    
+      responsive: [
+    {
+      breakpoint: 1150,
+      settings: {
+        vertical: false,
+      }
+    },
+  ]
+    });
+  }
+
+  var i = 0;
+  $('#menu-button').click(function(){    
+    if (i%2===0) {
+      $('#menu-button').css("background-image", "url(images/menuclosed.svg)")
+      $('#mobile-menu').css("display", "flex")
+      $('main').css("padding-top", "0")
+      i++;
+    } else {
+      $('#menu-button').css("background-image", "url(images/menuopen.svg)")
+      $('#mobile-menu').css("display", "none")
+      $('main').css("padding-top", "4rem")
+      i++;
     }
   });
-});
-
-</script>
-
-<script id="mcjs">
-  !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/6002684bae4a40458e05587b2/6ca50c8712130f493b52ff1ed.js");
 </script>

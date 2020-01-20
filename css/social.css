@@ -1,0 +1,23 @@
+aside {
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 4rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(191.57deg, var(--color-pink) 0%, var(--color-indigo) 100%);
+  z-index: 20;
+}
+
+aside a img {
+  width: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  aside {
+    display: none;
+  }
+}

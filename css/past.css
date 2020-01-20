@@ -1,0 +1,155 @@
+nav {
+  background: var(--color-dark);
+}
+
+.nav-logo {
+  background-image: url("../images/logowhite.svg");
+}
+
+#mobile-menu {
+  background-color: var(--color-dark);
+}
+
+#mobile-menu a {
+  color: var(--color-white);
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+/*------------------------------EDITIONS------------------------------*/
+.past-editions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.past-editions a {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 28px;
+  letter-spacing: 0.115em;
+  color: var(--color-grey);
+}
+
+.past-editions a:hover {
+  color: var(--color-white);
+  background-image: url("../images/edition2019.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*------------------------------EDITIONS------------------------------*/
+.past-partners h2 {
+  margin-top: 4rem;  
+}
+
+.past-partners h2 {
+  position: relative;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 115.5%;
+}
+
+.past-partners h2 span {
+  background-color: black;
+  padding-right: 1.25rem;
+}
+
+.past-partners h2:after {
+  content:"";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  border-top: 0.25rem solid;
+  border-image-source: linear-gradient(90deg, var(--color-indigo) 0%, var(--color-pink) 100%);
+  border-image-slice: 1;
+  z-index: -1;
+}
+
+/*------------------------------EDITIONS------------------------------*/
+.partner-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 4rem 0;  
+}
+
+.partner-section a {
+  position: relative;
+  width: 16rem;
+  height: 16rem;
+  margin-bottom: 5rem;
+  background-color: var(--color-white);
+  background-image: url("../images/logos/refood.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 10px 10px 10px #3619E0;
+}
+
+.partner-section a:before {
+  content: 'REFOOD';
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  height: calc(100% - 2rem);
+  width: calc(100% - 2rem);
+  bottom: 0;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  background: linear-gradient(180deg, rgba(244, 11, 166, 0.21) 0%, rgba(54, 25, 224, 0.6) 100%);
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 115.5%;
+  color: var(--color-white);
+}
+
+.partner-section a:hover:before {
+  opacity: 100%;
+}
+/*------------------------------MOBILE------------------------------*/
+@media screen and (max-width: 1100px) {
+  .past-editions a {
+    flex-basis: 25%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .past-editions {
+    margin-top: 1.5rem;
+  }
+
+  .past-partners h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  .past-partners h2:after {
+    height: 0.6rem;
+  }
+
+  .partner-section article .partner-logo {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .past-editions {
+    margin-top: 1rem;
+  }
+
+  .past-editions a {
+    flex-basis: 20%;
+  }
+}

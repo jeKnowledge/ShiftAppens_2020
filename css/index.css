@@ -54,16 +54,35 @@ main {
   font-weight: 300;
 }
 
+.hero-info h3 {
+  margin-bottom: 3rem;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.115em;
+  filter: blur(1rem);
+}
+
 .hero-info h4 {
   font-size: 2.25rem;
   line-height: 54px;
 }
 
-.hero-info p {
+.hero-info li {
   line-height: 26px;
 }
 
-.hero-info p span {
+.hero-info li::before {
+  content: "";
+  padding-right: 70px;
+  margin-right: 0.5rem;
+  position: relative;
+  top: -15px;
+  border-bottom: 0.25rem solid;
+  border-image-source: linear-gradient(90deg, #3619E0 0%, #F40BA6 100%);
+  border-image-slice: 1;
+}
+
+.hero-info li span {
   font-weight: 700;
 }
 
@@ -83,6 +102,17 @@ main {
   top: 10%  !important;
 }
 
+#scene p {
+  left: 25% !important;
+  text-align: center;
+  background: linear-gradient(90deg, var(--color-indigo) 0%, var(--color-pink) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.5rem;
+  letter-spacing: 0.115em;
+}
+
 #arrow {
   justify-self: center;
   grid-column-start: 1;
@@ -91,17 +121,6 @@ main {
 
 #arrow img {
   width: 3rem;
-}
-
-#scene p {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-bottom: 10rem;
-  background: linear-gradient(90deg, var(--color-indigo) 0%, var(--color-pink) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  letter-spacing: 0.115em;
 }
 
 /* ------------------ ABOUT ------------------ */
@@ -130,19 +149,24 @@ main {
   margin-bottom: 0rem;
 }
 
-.slick-list {
-  overflow-y: hidden;
-}
-
-.slick-slide {
-  padding: 0.5rem 0;
-}
-
 .container {
-  width: 400px;
+  width: 500px;
+  height: 600px;
+  overflow-y: hidden;
   justify-self: center;
 }
 
+.slick-slide {
+  padding: 1rem 0;
+  transition: 0.5s;
+}
+
+.slick-center {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  transform: scale(1.25);
+  padding: 3rem 0;
+}
 
 /* ------------------ WHERE AND HOW ------------------ */
 .where-section {
@@ -163,8 +187,6 @@ main {
 }
 
 .where p span {
-  text-transform: uppercase;
-  line-height: 144.6%;
   font-weight: 700;
 }
 
@@ -291,20 +313,24 @@ main {
   .hero {
     grid-template-rows: 1fr 2fr 1fr;
     grid-template-columns: 1fr;
+    background: url(../images/backgroundmobile.svg);
+    background-position: center;
+    background-size: cover;
   }
 
-  #scene {
-    order: 0;
+  .hero-info {
+    order: 1;
   }
 
-  .hero-info h4, .hero-info p {
-    display: none;
+  .hero-info h4, .hero-info h3, .hero-info li, .hero #particles, .hero #tiger {
+    display: none !important;
   }
 
   #arrow {
     justify-self: center;
     grid-column-start: auto;
     grid-column-end: auto;
+    order: 2;
   }
   
   .about-section {
@@ -367,11 +393,6 @@ main {
     font-size: 2.5rem;
     line-height: 3rem;
   }
-  
-  .hero-info p {
-    font-size: 14px;
-    line-height: 1.5rem;
-  }
 
   .about-section {
     grid-template-rows: 1fr;
@@ -380,10 +401,6 @@ main {
 
   .about-info {
     width: 80%;
-  }
-
-  .img-mockup {
-    display: none;
   }
 
   .where-section {
@@ -397,10 +414,6 @@ main {
 
   .where h3 {
     font-size: 1rem;
-  }
-
-  .img-mockup {
-    display: none;
   }
 
   .info {
@@ -420,6 +433,10 @@ main {
   .hero-info h2 {
     font-size: 2rem;
     line-height: 2.5rem;
+  }
+
+  #scene p { 
+    font-size: 1.2rem;
   }
 
   .info form .info-form-input input {

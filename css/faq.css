@@ -20,6 +20,12 @@ article {
   background: linear-gradient(178.18deg, var(--color-indigo) 13.88%, var(--color-pink) 84.94%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.question:hover > span {
+  opacity: 100%;
 }
 
 .question p {
@@ -29,6 +35,7 @@ article {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.115em;
+  transition: 0.2s ease-in-out;
 }
 
 .answer {
@@ -61,7 +68,7 @@ article {
 }
 
 .tri-right.btm-left:after{
-	content: ' ';
+	content: '';
 	position: absolute;
 	width: 0;
 	height: 0;
@@ -70,11 +77,12 @@ article {
   top: auto;
 	bottom: -20px;
 	border: 22px solid;
-	border-color: transparent transparent transparent #E5E5E5;
+  border-color: transparent transparent transparent #E5E5E5;
+  transition: 0.2s ease-in-out;
 }
 
 .tri-right.btm-right:after{
-	content: ' ';
+	content: '';
 	position: absolute;
 	width: 0;
 	height: 0;
@@ -82,9 +90,8 @@ article {
 	right: 0px;
 	bottom: -20px;
 	border: 12px solid;
-	border-color: var(--color-pink) var(--color-pink) transparent transparent;
+  border-color: var(--color-pink) var(--color-pink) transparent transparent;
 }
-
 
 .question:hover > .tri-right.btm-left p {
   background-color: #C6C6C6;
@@ -92,6 +99,47 @@ article {
 
 .question:hover > .tri-right.btm-left:after  {
 	border-color: transparent transparent transparent #C6C6C6;
+}
+
+.question:hover + .wave {
+  opacity: 100%;
+}
+
+.wave {
+  padding: 0.7rem;
+  margin-left: auto;
+  text-align:center;
+  background: linear-gradient(332.64deg, #F40BA6 0%, #3619E0 100%);	position:relative;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.wave .dot {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin-right: 0.25rem;
+  background:var(--color-white);
+  animation: wave 1.3s linear infinite;
+}
+
+.wave .dot:nth-child(2) {
+  animation-delay: -1.1s;
+}
+
+.wave .dot:nth-child(3) {
+  animation-delay: -0.9s;
+}
+
+@keyframes wave {
+	0%, 60%, 100% {
+		transform: initial;
+	}
+
+	30% {
+		transform: translateY(-12px);
+	}
 }
 
 

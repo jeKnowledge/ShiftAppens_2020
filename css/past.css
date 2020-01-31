@@ -39,10 +39,33 @@ body {
 
 .past-editions a:hover {
   color: var(--color-white);
-  background-image: url("../images/edition2019.svg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.past-editions #edition-2019:hover {
+  background-image: linear-gradient(180deg, rgba(244, 11, 166, 0.4) 0%, rgba(54, 25, 224, 0.4) 100%), url("../images/past/2019.jpg");
+}
+
+.past-editions #edition-2018:hover {
+  background-image: linear-gradient(180deg, rgba(244, 11, 166, 0.4) 0%, rgba(54, 25, 224, 0.4) 100%), url("../images/past/2018.jpg");
+}
+
+.past-editions #edition-2017:hover {
+  background-image: linear-gradient(180deg, rgba(244, 11, 166, 0.4) 0%, rgba(54, 25, 224, 0.4) 100%), url("../images/past/2017.jpg");
+}
+
+.past-editions #edition-2016:hover {
+  background-image: linear-gradient(180deg, rgba(244, 11, 166, 0.4) 0%, rgba(54, 25, 224, 0.4) 100%), url("../images/past/2016.jpg");
+}
+
+.past-editions #edition-2015:hover {
+  background-image: linear-gradient(180deg, rgba(244, 11, 166, 0.4) 0%, rgba(54, 25, 224, 0.4) 100%), url("../images/past/2015.jpg");
+}
+
+.past-editions #edition-2014:hover {
+  background-image: linear-gradient(180deg, rgba(244, 11, 166, 0.4) 0%, rgba(54, 25, 224, 0.4) 100%), url("../images/past/2014.jpg");
 }
 
 /*------------------------------EDITIONS------------------------------*/
@@ -90,14 +113,13 @@ body {
   margin-bottom: 5rem;
   background-color: var(--color-white);
   background-image: url("../images/logos/refood.png");
-  background-size: contain;
+  background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
   box-shadow: 10px 10px 10px #3619E0;
 }
 
 .partner-section a:before {
-  content: 'REFOOD';
   display: flex;
   align-items: flex-end;
   position: absolute;
@@ -122,6 +144,10 @@ body {
   .past-editions a {
     flex-basis: 25%;
   }
+
+  .nav-logo {
+    background-image: url("../images/logominiwhite.svg");
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -138,13 +164,17 @@ body {
     height: 0.6rem;
   }
 
+  .partner-section {
+    justify-content: center;
+  }
+
   .partner-section article .partner-logo {
     width: 8rem;
     height: 8rem;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {  
   .past-editions {
     margin-top: 1rem;
   }

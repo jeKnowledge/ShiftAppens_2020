@@ -10,7 +10,7 @@
 .team-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 5rem;
+  margin: 5rem 0rem 4rem 0rem;
 }
 
 article {

@@ -32,7 +32,9 @@ nav a {
 
 .nav-links a:hover, .mobile-links a:hover {
   background: linear-gradient(90deg, var(--color-pink) 0%, var(--color-indigo) 100%);
+  background-clip: text;
   -webkit-background-clip: text;
+  text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
 }
 
@@ -139,6 +141,7 @@ nav a {
   .nav-logo {
     grid-column-start: 2;
     background-image: url("../images/logominiblack.svg");
+    background-size: 4rem;
   }
 
   .menu {

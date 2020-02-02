@@ -21,6 +21,7 @@ nav {
 }
 
 nav a {
+  display: -webkit-box;
   font-weight: bold;
   font-size: 18px;
   line-height: 28px;
@@ -38,7 +39,7 @@ nav a {
   -webkit-text-fill-color: transparent;
 }
 
-.nav-links a::after, .mobile-links a::after {
+/* .nav-links a::after, .mobile-links a::after {
   display: block;
   content: '';
   border-bottom: 0.25rem solid;
@@ -50,7 +51,7 @@ nav a {
 
 .nav-links a:hover:after, .mobile-links a:hover:after { transform: scaleX(1); }
  
-.nav-links a.fromLeft:after, .mobile-links a.fromLeft:after {  transform-origin:  0% 50%; }
+.nav-links a.fromLeft:after, .mobile-links a.fromLeft:after {  transform-origin:  0% 50%; } */
 
 .nav-logo {
   width: 60%;

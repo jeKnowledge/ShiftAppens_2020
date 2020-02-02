@@ -316,7 +316,7 @@ main {
   .hero {
     grid-template-rows: 1fr 2fr 1fr;
     grid-template-columns: 1fr;
-    background: url(../images/backgroundmobile.svg);
+    background: url(../images/backgroundmobile.png);
     background-position: center;
     background-size: cover;
   }

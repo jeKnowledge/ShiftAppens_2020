@@ -32,9 +32,7 @@ nav a {
 
 .nav-links a:hover, .mobile-links a:hover {
   background: linear-gradient(90deg, var(--color-pink) 0%, var(--color-indigo) 100%);
-  background-clip: text;
   -webkit-background-clip: text;
-  text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
 }
 
@@ -125,10 +123,9 @@ nav a {
 
 @media screen and (min-width: 1100px) {
   #mobile-menu {
-  display: none !important;
+    display: none !important;
+  }
 }
-}
-
 
 @media screen and (max-width: 1100px) {
   nav {

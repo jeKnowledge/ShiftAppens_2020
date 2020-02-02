@@ -77,6 +77,7 @@ main {
   margin-right: 0.5rem;
   position: relative;
   top: -15px;
+  border: 0;
   border-bottom: 0.25rem solid;
   border-image-source: linear-gradient(90deg, #3619E0 0%, #F40BA6 100%);
   border-image-slice: 1;
@@ -267,12 +268,10 @@ main {
 .info form .info-form-input input {
   width: 26rem;
   height: 2rem;
+  border: 0;
+  border-bottom: 0.25rem solid;
   border-image-source: linear-gradient(90deg, var(--color-indigo) 0%, #940EE2 50%, var(--color-pink) 100%);
-  border-width: 3px;
   border-image-slice: 1;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
   color: #F2F2F2;
   background-color: transparent;
   font-family: 'Hind', sans-serif;
@@ -322,7 +321,7 @@ main {
     order: 1;
   }
 
-  .hero-info h4, .hero-info h3, .hero-info li, .hero #particles, .hero #tiger {
+  .hero-info h4, .hero-info h3, .hero-info li, .hero #particles, .hero #tiger, .container {
     display: none !important;
   }
 
@@ -337,10 +336,6 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 7rem 0;
-  }
-
-  .container {
-    display: none;
   }
 
   .where-section {
@@ -383,10 +378,6 @@ main {
 @media screen and (max-width: 600px) {
   .hero-info {
     width: 80%;
-  }
-  
-  .hero #particles {
-    width: 20rem;
   }
 
   .hero-info h2 {
@@ -436,7 +427,7 @@ main {
   }
 
   #scene p { 
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .info form .info-form-input input {

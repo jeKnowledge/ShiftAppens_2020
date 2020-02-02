@@ -92,6 +92,7 @@ body {
   left: 0;
   right: 0;
   height: 1rem;
+  border: 0;
   border-top: 0.25rem solid;
   border-image-source: linear-gradient(90deg, var(--color-indigo) 0%, var(--color-pink) 100%);
   border-image-slice: 1;

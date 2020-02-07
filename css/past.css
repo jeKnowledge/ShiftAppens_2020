@@ -113,7 +113,6 @@ body {
   height: 16rem;
   margin-bottom: 5rem;
   background-color: var(--color-white);
-  background-image: url("../images/logos/refood.png");
   background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
@@ -167,11 +166,6 @@ body {
 
   .partner-section {
     justify-content: center;
-  }
-
-  .partner-section article .partner-logo {
-    width: 8rem;
-    height: 8rem;
   }
 }
 

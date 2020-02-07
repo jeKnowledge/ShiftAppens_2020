@@ -19,99 +19,135 @@
 }
 
 .partner-section #partner-6 {
-  background-image: url("../images/partners/dei.png");
-}
-
-.partner-section #partner-7 {
-  background-image: url("../images/partners/DigitalOcean_logo.svg");
-}
-
-.partner-section #partner-8 {
-  background-image: url("../images/partners/dreampills.png");
-}
-
-.partner-section #partner-9 {
-  background-image: url("../images/partners/esabic.png");
-}
-
-.partner-section #partner-10 {
-  background-image: url("../images/partners/fctuc.png");
-}
-
-.partner-section #partner-11 {
-  background-image: url("../images/partners/feedzai-seeklogo.com.svg");
-}
-
-.partner-section #partner-12 {
-  background-image: url("../images/partners/flag.png");
-}
-
-.partner-section #partner-13 {
-  background-image: url("../images/partners/github.png");
-}
-
-.partner-section #partner-14 {
-  background-image: url("../images/partners/ipn.png");
-}
-
-.partner-section #partner-15 {
-  background-image: url("../images/partners/lifeonmars.png");
-}
-
-.partner-section #partner-16 {
   background-image: url("../images/partners/Logo-Comboios-de-Portugal.svg");
 }
 
+.partner-section #partner-7 {
+  background-image: url("../images/partners/critical.png");
+}
+
+.partner-section #partner-8 {
+  background-image: url("../images/partners/deloitte.jpg");
+}
+
+.partner-section #partner-9 {
+  background-image: url("../images/partners/dei.png");
+}
+
+.partner-section #partner-10 {
+  background-image: url("../images/partners/DigitalOcean_logo.svg");
+}
+
+.partner-section #partner-11 {
+  background-image: url("../images/partners/dreampills.png");
+}
+
+.partner-section #partner-12 {
+  background-image: url("../images/partners/esabic.png");
+}
+
+.partner-section #partner-13 {
+  background-image: url("../images/partners/fctuc.png");
+}
+
+.partner-section #partner-14 {
+  background-image: url("../images/partners/feedzai-seeklogo.com.svg");
+}
+
+.partner-section #partner-15 {
+  background-image: url("../images/partners/flag.png");
+}
+
+.partner-section #partner-16 {
+  background-image: url("../images/partners/github.png");
+}
+
 .partner-section #partner-17 {
-  background-image: url("../images/partners/luso.png");
+  background-image: url("../images/partners/goodbarber.png");
 }
 
 .partner-section #partner-18 {
-  background-image: url("../images/partners/novabase.png");
+  background-image: url("../images/partners/gulbenkian.png");
 }
 
 .partner-section #partner-19 {
-  background-image: url("../images/partners/outsystems-seeklogo.com.svg");
+  background-image: url("../images/partners/ipn.png");
 }
 
 .partner-section #partner-20 {
-  background-image: url("../images/partners/redlight.png");
+  background-image: url("../images/partners/lifeonmars.png");
 }
 
 .partner-section #partner-21 {
-  background-image: url("../images/partners/revolut.png");
+  background-image: url("../images/partners/licor.png");
 }
 
 .partner-section #partner-22 {
-  background-image: url("../images/partners/sketch-1.svg");
+  background-image: url("../images/partners/luso.png");
 }
 
 .partner-section #partner-23 {
-  background-image: url("../images/partners/sportscaffe.png");
+  background-image: url("../images/partners/microsoft.png");
 }
 
 .partner-section #partner-24 {
+  background-image: url("../images/partners/novabase.png");
+}
+
+.partner-section #partner-25 {
+  background-image: url("../images/partners/outsystems-seeklogo.com.svg");
+}
+
+.partner-section #partner-26 {
+  background-image: url("../images/partners/redbull.jpg");
+}
+
+.partner-section #partner-27 {
+  background-image: url("../images/partners/redlight.png");
+}
+
+.partner-section #partner-28 {
+  background-image: url("../images/partners/revolut.png");
+}
+
+.partner-section #partner-29 {
+  background-image: url("../images/partners/sketch-1.svg");
+}
+
+.partner-section #partner-30 {
+  background-image: url("../images/partners/sportscaffe.png");
+}
+
+.partner-section #partner-31 {
+  background-image: url("../images/partners/stratio.png");
+}
+
+.partner-section #partner-32 {
   background-image: url("../images/partners/subvisual.svg");
   background-size: 60%;
 }
 
-.partner-section #partner-25 {
+.partner-section #partner-33 {
+  background-image: url("../images/partners/talkdesk.png");
+}
+
+.partner-section #partner-34 {
   background-image: url("../images/partners/tisystems.png");
 }
 
-.partner-section #partner-26 {
+.partner-section #partner-35 {
   background-image: url("../images/partners/uc.png");
 }
 
-.partner-section #partner-27 {
+.partner-section #partner-36 {
   background-image: url("../images/partners/unbabel.png");
 }
 
-.partner-section #partner-28 {
+.partner-section #partner-37 {
   background-image: url("../images/partners/whitesmith.png");
 }
 
-.partner-section #partner-29 {
+.partner-section #partner-38 {
   background-image: url("../images/partners/wit.png");
 }
 
@@ -137,97 +173,133 @@
 }
 
 .partner-section #partner-6:before {
-  content:"Departamento de Engenharia Informática";
-}
-
-.partner-section #partner-7:before {
-  content:"Digital Ocean";
-}
-
-.partner-section #partner-8:before {
-  content:"Dream Pills";
-}
-
-.partner-section #partner-9:before {
-  content:"ESA BIC";
-}
-
-.partner-section #partner-10:before {
-  content:"Faculdade de Ciências e Tecnologia da Universidade de Coimbra";
-}
-
-.partner-section #partner-11:before {
-  content:"Feedzai";
-}
-
-.partner-section #partner-12:before {
-  content:"Flag";
-}
-
-.partner-section #partner-13:before {
-  content:"Github";
-}
-
-.partner-section #partner-14:before {
-  content:"Instituto Pedro Nunes";
-}
-
-.partner-section #partner-15:before {
-  content:"Life on Mars ";
-}
-
-.partner-section #partner-16:before {
   content:"CP";
 }
 
+.partner-section #partner-7:before {
+  content:"Critical Software";
+}
+
+.partner-section #partner-8:before {
+  content:"Deloitte";
+}
+
+.partner-section #partner-9:before {
+  content:"Departamento de Engenharia Informática";
+}
+
+.partner-section #partner-10:before {
+  content:"Digital Ocean";
+}
+
+.partner-section #partner-11:before {
+  content:"Dream Pills";
+}
+
+.partner-section #partner-12:before {
+  content:"ESA BIC";
+}
+
+.partner-section #partner-13:before {
+  content:"Faculdade de Ciências e Tecnologia da Universidade de Coimbra";
+}
+
+.partner-section #partner-14:before {
+  content:"Feedzai";
+}
+
+.partner-section #partner-15:before {
+  content:"Flag";
+}
+
+.partner-section #partner-16:before {
+  content:"Github";
+}
+
 .partner-section #partner-17:before {
-  content:"Luso";
+  content:"Goodbarber";
 }
 
 .partner-section #partner-18:before {
-  content:"Novabase";
+  content:"Fundação Calouste Gulbenkian";
 }
 
 .partner-section #partner-19:before {
-  content:"Outsystems";
+  content:"Instituto Pedro Nunes";
 }
 
 .partner-section #partner-20:before {
-  content:"Redlight";
+  content:"Life on Mars ";
 }
 
 .partner-section #partner-21:before {
-  content:"Revolut";
+  content:"Licor Beirão";
 }
 
 .partner-section #partner-22:before {
-  content:"Sketch";
+  content:"Luso";
 }
 
 .partner-section #partner-23:before {
-  content:"Sports Caffe";
+  content:"Microsoft";
 }
 
 .partner-section #partner-24:before {
-  content:"Subvisual";
+  content:"Novabase";
 }
 
 .partner-section #partner-25:before {
-  content:"TiSystems";
+  content:"Outsystems";
 }
 
 .partner-section #partner-26:before {
-  content:"Universidade de Coimbra";
+  content:"Redbull";
 }
 
 .partner-section #partner-27:before {
-  content:"Unbabel";
+  content:"Redlight";
 }
 
 .partner-section #partner-28:before {
-  content:"Whitesmith";
+  content:"Revolut";
 }
 
 .partner-section #partner-29:before {
+  content:"Sketch";
+}
+
+.partner-section #partner-30:before {
+  content:"Sports Caffe";
+}
+
+.partner-section #partner-31:before {
+  content:"Stratio Automative";
+}
+
+.partner-section #partner-32:before {
+  content:"Subvisual";
+}
+
+.partner-section #partner-33:before {
+  content:"Talkdesk";
+}
+
+.partner-section #partner-34:before {
+  content:"TiSystems";
+}
+
+.partner-section #partner-35:before {
+  content:"Universidade de Coimbra";
+}
+
+.partner-section #partner-36:before {
+  content:"Unbabel";
+}
+
+.partner-section #partner-37:before {
+  content:"Whitesmith";
+}
+
+.partner-section #partner-38:before {
   content:"WIT Software";
 }

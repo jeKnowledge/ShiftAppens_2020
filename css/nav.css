@@ -31,6 +31,31 @@ nav a {
   text-decoration: none;
 }
 
+nav .nav-tickets, .mobile-links .nav-tickets {
+  justify-self: end;
+  font-size: 24px;
+  line-height: 36px;
+  background: linear-gradient(90deg, var(--color-pink) 0%, var(--color-indigo) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s ease-in-out;
+}
+
+.mobile-links .nav-tickets {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+nav .nav-tickets:hover, .mobile-links .nav-tickets:hover {
+  background: linear-gradient(90deg, var(--color-indigo) 0%, var(--color-pink) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
 .nav-links a:hover, .mobile-links a:hover {
   background: linear-gradient(90deg, var(--color-pink) 0%, var(--color-indigo) 100%);
   background-clip: text;
@@ -135,7 +160,7 @@ nav a {
     padding: 0 2rem;
   }
 
-  .nav-links {
+  .nav-links, nav .nav-tickets {
     display: none;
   }
   

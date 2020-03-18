@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/faq.css">
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500|Poppins:400,700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flooper"></script>
   </head>
   <body>
     <nav>
@@ -39,6 +40,16 @@
       <a href="https://shiftappens.com" class="nav-logo"></a>
       <div class="menu" id="menu-button"></div>
     </nav>
+    <div class="alert">
+      <div class="c-my-flooper js-flooper">
+        <img class="js-flooper-item" src="images/alert.png" alt="alert" />
+        <span class="js-flooper-item">EVENT DATE POSTPONED FOR PUBLIC HEALTH AND SAFETY REASONS!</span>
+        <span class="js-flooper-item">SHIFT APPENS 2020 WILL STILL APPEN!</span>
+        <span class="js-flooper-item">CHECK FOR UPDATES ON OUR SOCIAL NETWORKS!</span>
+        <span class="js-flooper-item">BE SURE TO FOLLOW HEALTH REGULATIONS STATED BY THE AUTHORITIES AND GOVERNMENTS!</span>
+        <span class="js-flooper-item">SEE YOU SOON!</span>
+      </div>
+    </div>
     <aside>
       <a href="https://twitter.com/ShiftAPPens" target="_blank"><img src="images/twitter.svg" alt="Twitter"></a>
       <a href="https://www.facebook.com/whereshiftappens/" target="_blank"><img src="images/facebook.svg" alt="facebook"></a>
@@ -357,4 +368,9 @@
       i++;
     }
   });
+
+  let myFlooper = new flooper('.js-flooper', {
+    speed: 0.5,
+  });
+  myFlooper.init();
 </script>

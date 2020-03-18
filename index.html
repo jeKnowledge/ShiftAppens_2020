@@ -34,7 +34,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"></script>
-  <script src="js/countdown.js"></script>
+  <script src="https://unpkg.com/flooper"></script>
 </head>
 
 <body>
@@ -46,8 +46,19 @@
     </div>
     <a href="https://shiftappens.com" class="nav-logo"></a>
     <div class="menu" id="menu-button"></div>
-    <a target="_blank" class="nav-tickets" href="https://taikai.network/shift-appens/challenges/shiftappens-2020">Tickets</a>
+    <a target="_blank" class="nav-tickets"
+      href="https://taikai.network/shift-appens/challenges/shiftappens-2020">Taikai</a>
   </nav>
+  <div class="alert">
+    <div class="c-my-flooper js-flooper">
+      <img class="js-flooper-item" src="images/alert.png" alt="alert" />
+      <span class="js-flooper-item">EVENT DATE POSTPONED FOR PUBLIC HEALTH AND SAFETY REASONS!</span>
+      <span class="js-flooper-item">SHIFT APPENS 2020 WILL STILL APPEN!</span>
+      <span class="js-flooper-item">CHECK FOR UPDATES ON OUR SOCIAL NETWORKS!</span>
+      <span class="js-flooper-item">BE SURE TO FOLLOW HEALTH REGULATIONS STATED BY THE AUTHORITIES AND GOVERNMENTS!</span>
+      <span class="js-flooper-item">SEE YOU SOON!</span>
+    </div>
+  </div>
   <aside>
     <a href="https://twitter.com/ShiftAPPens" target="_blank"><img src="images/twitter.svg" alt="Twitter"></a>
     <a href="https://www.facebook.com/whereshiftappens/" target="_blank"><img src="images/facebook.svg"
@@ -59,7 +70,8 @@
   <main>
     <div id="mobile-menu">
       <div class="mobile-links">
-        <a target="_blank" class="nav-tickets" href="https://taikai.network/shift-appens/challenges/shiftappens-2020">Tickets</a>
+        <a target="_blank" class="nav-tickets"
+          href="https://taikai.network/shift-appens/challenges/shiftappens-2020">Taikai</a>
         <a class="fromLeft" href="about.html">about us</a>
         <a class="fromLeft" href="past.html">past</a>
         <a class="fromLeft" href="faq.html">faq</a>
@@ -76,8 +88,7 @@
     </div>
     <section class="hero">
       <div class="hero-info">
-        <h2 class="hero-date">March 20<span>th</span>,<br>21<span>st</span> & 22<span>nd</span></h2>
-        <h3>Querias saber não querias?</h3>
+        <!-- <h3>Querias saber não querias?</h3> -->
         <h4>make it appen</h4>
         <ul>
           <li>
@@ -90,7 +101,6 @@
       </div>
       <div id="scene">
         <img data-depth="0.2" id="particles" src="images/particulas.png" alt="particles" />
-        <p data-depth="1.5"><span id="days"></span>d : <span id="hours"></span>h : <span id="minutes"></span>m : <span id="seconds"></span>s</p>
         <img data-depth="1" id="tiger" src="images/tiger.png" alt="tiger" />
       </div>
       <a id="arrow" href="#about-ref"><img src="images/seta.png" alt="arrow" /></a>
@@ -130,30 +140,6 @@
         </div>
       </div>
     </section>
-<!--     <section class="where">
-      <div class="where-section">
-        <div id='map' class="map-section">
-        </div>
-        <div class="where-info">
-          <div class="section-title">
-            <h2>Where & How?</h2>
-          </div>
-          <p>
-            Once more, our dear Hackathon is going to take place in the lovely city of Coimbra, in the Pavilhão Dr. Mário Mexia, 
-            placed on a central area of the city, provided by a good transport network and a shopping center, right across the street.
-          </p>
-          <h3>Staying with us?</h3>
-          <p>
-            Worried about where to sleep? Don’t be! It’s completely of our interest to provide you with the best conditions and comfort possible.
-          </p>
-          <h3>Wanna know how to get there?</h3>
-          <p>
-            If you arrive at Coimbra <span>by bus</span> or <span>by train (station of Coimbra-B)</span>, you can catch the yellow bus no.5, from SMTUC network, and get out at “Infanta Dona Maria”. If you arrive to the city <span>by train, (station of Coimbra-A)</span>, you can catch the yellow bus no.24T and also get out at “Infanta Dona Maria”.
-            You can always decide to take a taxi/uber/bolt, and choose the Pavilhão Dr. Mário Mexia as your destination.
-          </p>
-        </div>
-      </div>
-    </section> -->
     <section class="info">
       <div class="info-section">
         <div class="info-info">
@@ -213,12 +199,6 @@
         </a>
       </div>
     </div>
-<!--     <div class="footer-collab">
-      <h2>In collaboration with</h2>
-      <a href="https://www.cm-coimbra.pt/" target="_blank">
-        <img src="images/cmc.svg" alt="CMC" />
-      </a>
-    </div> -->
   </footer>
 </body>
 
@@ -250,37 +230,6 @@
     m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
   }(document, "script",
     "https://chimpstatic.com/mcjs-connected/js/users/6002684bae4a40458e05587b2/6ca50c8712130f493b52ff1ed.js");
-   /*
-    mapboxgl.accessToken =
-      'pk.eyJ1IjoibWlndWVsdmFzY29uY2Vsb3MiLCJhIjoiY2s1azc4MHg2MGE5bjNrbzR0dmxvaGxjayJ9.7Y5nEvvzMcLVkoJPfSmgIg';
-    var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/miguelvasconcelos/ck5k839mx2njl1inw2kxtxck1'
-    });
-
-    var geojson = {
-      type: 'FeatureCollection',
-      features: [{
-        type: 'Feature',
-        geometry: {
-          type: 'Point',
-          coordinates: [-8.408, 40.2058]
-        }
-      }]
-    };
-
-    map.scrollZoom.disable();
-    map.addControl(new mapboxgl.NavigationControl());
-
-    geojson.features.forEach(function (marker) {
-
-      var el = document.createElement('div');
-      el.className = 'marker';
-
-      new mapboxgl.Marker(el)
-        .setLngLat(marker.geometry.coordinates)
-        .addTo(map);
-    }); */
 
   var titleMain = $("#animatedHeading");
   var titleSubs = titleMain.find("slick-active");
@@ -326,4 +275,9 @@
       i++;
     }
   });
+
+  let myFlooper = new flooper('.js-flooper', {
+    speed: 0.5,
+  });
+  myFlooper.init();
 </script>

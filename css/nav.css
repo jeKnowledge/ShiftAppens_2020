@@ -149,6 +149,38 @@ nav .nav-tickets:hover, .mobile-links .nav-tickets:hover {
   width: 2rem;
 }
 
+.alert {
+  position: fixed;
+  top: 10vh;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 3rem;
+  background: linear-gradient(176.1deg, #3619E0 15.96%, #F40BA6 84.04%);
+  z-index: 20;
+}
+
+.alert span {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.055em;
+  color: #FFFFFF;
+  padding: 0 2rem;
+}
+
+.alert img {
+  padding: 0 2rem;
+}
+
+.c-my-flooper {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
 @media screen and (min-width: 1100px) {
   #mobile-menu {
     display: none !important;
